@@ -65,7 +65,7 @@ public class ItemsController {
         filename= uuid+"_"+filename;
         upload.transferTo(new File(path,filename));
         itemsService.update(items);
-
+        System.out.println("文件上传");
 
         return "redirect:findAll";
     }
